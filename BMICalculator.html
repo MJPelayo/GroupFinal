@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BMI Calculator</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp - v4.5.0
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="Final.html">FOC<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#Course">Course</a></li>
+          <li><a class="nav-link scrollto" href="#Concepts">Concepts</a></li>
+		  <li><a class="nav-link scrollto" href="#Databases">Databases</a></li>
+		  
+         <li class="dropdown"><a href="#Project"><span>Project</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#Project">Project</a></li>
+              <li class="dropdown"><a href="Students.html"><span>Students</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="Student1-page.html">Student #1</a></li>
+                  <li><a href="Student2-page.html">Student #2</a></li>
+                  <li><a href="Student3-page.html">Student #3</a></li>
+                  <li><a href="Student4-page.html">Student #4</a></li>
+                  <li><a href="Student5-page.html">Student #5</a></li>
+				   <li><a href="Student6-page.html">Student #6</a></li>
+                </ul>
+              </li>
+          
+              <li class="dropdown"><a href="Gates-page.html"><span>GATES</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                 <li><a href="Not-Gate.html">Not-Gate</a></li>
+                  <li><a href="And-Gate.html">And-Gate</a></li>
+                  <li><a href="Or-Gate.html">Or Gate</a></li>
+                  <li><a href="Xor-Gate.html">Xor Gate</a></li>
+				   <li><a href="Flip-Flop.html">Flip Flop</a></li>
+                </ul>
+              </li>
+              <li><a href="#Project">OTHERS</a></li>
+            </ul>
+          </li>
+		  
+		  <li><a class="nav-link scrollto" href="#Documentation">Documentation</a></li>
+          <li><a class="nav-link scrollto" href="#team">Dev Team</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+	  <!-- .navbar -->
+
+      <a href="Final.html" class="get-started-btn scrollto">Back</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>BMI Calculator</h2>
+          <ol>
+            <li><a href="Final.html">Back</a></li>
+            <li>#Project</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+	<!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+        
+		<div class="row">
+<center>
+ <div class="card">
+ 
+      <div class="container">
+        <div class="mytabs">
+          <input type="radio" id="tabStandard" name="mytabs" checked="checked">
+          <label for="tabStandard" class="tabLabel">Standard</label>
+          <div class="tab">
+            <div class="row d-flex  flex-wrap flex-row justify-content-start">
+              <div class="col-md-4">
+                <form onsubmit="return validateForm1();" name="form1">
+                  <label for="feet">Enter your height: </label>
+                  <input type="number" id="feet" placeholder="feet" class="form-control">
+                  <input type="number" id="inches" placeholder="inches" class="form-control">
+                  <br>
+                  <label for="weight">Enter your weight:</label>
+                  <input type="number" id="weightLBS" placeholder="pounds" class="form-control">
+                  <button type="submit" class="btn btn-primary" id="calculateStandard">Calculate</button>
+                </form>
+              </div>
+			  
+			  
+              <div class="col-md-7 p-3">
+                <div>
+				
+				<div class="fakeimg">
+			  
+                  <h3 id="info1" class="mb-4">How is BMI used?</h3>
+                  <p id="output1">BMI can be a screening tool, but it does not diagnose the body fatness or health of an
+                    individual. To
+                    determine if BMI
+                    is a health risk, a healthcare provider performs further assessments. Such assessments include
+                    skinfold thickness
+                    measurements, evaluations of diet, physical activity, and family history10.</p>
+                  <h3>Instructions</h3>
+                  <p>Enter your appropriate height(in feet and or inches) and your appropriate weight. Then click the
+                    Calculate
+                    button to compute your BMI.</p>
+                  <p>Learn more about BMIs by clicking <a
+                      href="https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html"
+                      target="_blank">here.</a></p>
+                </div>
+				</div>
+              </div>
+			  
+			 
+			  
+            </div>
+          </div>
+
+</div>
+
+      </div>
+    </div>
+ 
+</div>
+</center>
+</section>
+</center>
+<script>
+function infoMetric() {
+  alert(
+    "Kindly note that you are using the metric system(centimeters and meters), as well as kilograms."
+  );
+}
+document.getElementById("tabMetric").addEventListener("click", infoMetric);
+
+function infoStandard() {
+  alert(
+    "Kindly note that you are using the imperial system(feet and inches), as well as pounds."
+  );
+}
+document.getElementById("tabStandard").addEventListener("click", infoStandard);
+
+function validateForm1() {
+  let feet = document.getElementById("feet").value;
+  let inches = document.getElementById("inches").value;
+  let weight = document.getElementById("weightLBS").value;
+  if (feet == "" || inches == "" || weight == "") {
+    document.getElementById("info1").innerHTML = "Fill in all fields";
+    document.getElementById("info1").style.color = "red";
+    document.getElementById("info1").style.fontfamily = "Arial, Helvetica, sans-serif";
+    document.getElementById("calculateStandard").innerText = "Calculate";
+    document.getElementById("output1").innerHTML = "You are trying to submit an incomplete form. Kindly enter the required fields to be able to get your accurate BMI.";
+    return false;
+  } else {
+    feet = parseInt(feet, 10);
+    inches = parseInt(inches, 10);
+    weight = parseInt(weight, 10);
+
+    let height = feet * 12 + inches;
+    let bmi = (weight / height ** 2) * 703;
+    // bmi = Math.round(bmi);
+    bmi = bmi.toFixed(2);
+
+    document.getElementById("info1").innerHTML = "Your BMI has been computed successfully";
+    document.getElementById("info1").style.color = "green";
+    document.getElementById("info1").style.fontfamily = "Arial, Helvetica, sans-serif";
+    document.getElementById("calculateStandard").innerText = "SUCCESS";
+    
+    if (bmi < 18.5) {
+      bmi = "Your BMI is " + bmi + ".";
+      document.getElementById("output1").innerHTML = bmi + " This means that you are underweight";
+      return false;
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+      bmi = "Your BMI is " + bmi + ".";
+      document.getElementById("output1").innerHTML = bmi + " This means that you are at  a healthy weight.";
+      return false;
+    } else if (bmi >= 25.0 && bmi <= 29.9) {
+      bmi = "Your BMI is " + bmi + ".";
+      document.getElementById("output1").innerHTML = bmi + " Be wary of your condition. This means that you are overweight.";
+      return false;
+    } else if (bmi > 30.0) {
+      bmi = "Your BMI is " + bmi + ".";
+      document.getElementById("output1").innerHTML = bmi + " This means that you are obese. Be cautious about the health implications of being obese.";
+      return false;
+    }
+
+    document.getElementById("output1").innerHTML = bmi;
+    return false;
+  }
+}
+
+function validateForm2() {
+  let meters = document.getElementById("meters").value;
+  let cm = document.getElementById("cm").value;
+  let weight = document.getElementById("weightKG").value;
+  if (meters == "" || cm == "" || weight == "") {
+    document.getElementById("info2").innerHTML = "Fill in all fields";
+    document.getElementById("info2").style.color = "red";
+    document.getElementById("info2").style.fontfamily = "Arial, Helvetica, sans-serif";
+    document.getElementById("calculateMetric").innerText = "Calculate";
+    document.getElementById("output2").innerHTML = "You are trying to submit an incomplete form. Kindly enter the required fields to be able to get your accurate BMI.";
+    return false;
+  } else {
+    meters = parseInt(meters, 10);
+    cm = parseInt(cm, 10);
+    weight = parseInt(weight, 10);
+
+    let height = meters + (cm / 100);
+    let bmi = (weight / (height ** 2));
+    // bmi = Math.round(bmi);
+    bmi = bmi.toFixed(2);
+
+    document.getElementById("info2").innerHTML = "Your BMI has been computed successfully";
+    document.getElementById("info2").style.color = "green";
+    document.getElementById("info2").style.fontfamily = "Arial, Helvetica, sans-serif";
+    document.getElementById("calculateMetric").innerText = "SUCCESS";
+    
+    if (bmi < 18.5) {
+      bmi = "Your BMI is " + bmi + ".";
+      document.getElementById("output2").innerHTML = bmi + " This means that you are underweight.";
+      return false;
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+      bmi = "Your BMI is " + bmi + ".";
+      document.getElementById("output2").innerHTML = bmi + " This means that you are at a healthy weight.";
+      return false;
+    } else if (bmi >= 25.0 && bmi <= 29.9) {
+      bmi = "Your BMI is " + bmi + ".";
+      document.getElementById("output2").innerHTML = bmi + " Be wary of your condition. This means that you are overweight.";
+      return false;
+    } else if (bmi > 30.0) {
+      bmi = "Your BMI is " + bmi + ".";
+      document.getElementById("output2").innerHTML = bmi + " This means that you are obese. Be cautious about the health implications of being obese.";
+      return false;
+    }
+
+    document.getElementById("output2").innerHTML = bmi;
+    return false;
+  }
+}
+
+</script>
+    </form>
+  </div>
+  </div>
+
+  <script src="./main.js"></script>
+    
+  </div>
+		
+	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+ <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+       <center>
+             <div class="logo"><h1><span>G</span>roup <span>5</span></h1></div>
+        <p>Group 5's : Fundamentals of Computing Web Page, Copyright &copy; <script>document.write(new Date().getFullYear());</script></p>
+      </div>
+      
+              <div class="social-links mt-3">
+               
+				</center>
+              </div>
+            </div>
+          
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+<style>
+/* Fake image */
+.fakeimg {
+  background-color: #C8CC46;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+#myImage,
+.button-group {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#backing,
+.2fakeimg {
+  background-color: #758bfd;
+  width: 90%;
+  padding: 10px;
+}
+</style>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+<!--Javascript-->
+              
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scrollY > 0);
+            })
+        </script>
+
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function()
+        {
+            document.getElementById('radio' + counter).checked = true;
+            counter ++;
+            if(counter > 6){
+                counter = 1;
+            }
+        }, 5000);
+        </script>
+</body>
+
+</html>

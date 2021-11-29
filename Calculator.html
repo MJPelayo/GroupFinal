@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Calculator</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp - v4.5.0
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="Final.html">FOC<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#Course">Course</a></li>
+          <li><a class="nav-link scrollto" href="#Concepts">Concepts</a></li>
+		  <li><a class="nav-link scrollto" href="#Databases">Databases</a></li>
+		  
+         <li class="dropdown"><a href="#Project"><span>Project</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#Project">Project</a></li>
+              <li class="dropdown"><a href="Students.html"><span>Students</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="Student1-page.html">Student #1</a></li>
+                  <li><a href="Student2-page.html">Student #2</a></li>
+                  <li><a href="Student3-page.html">Student #3</a></li>
+                  <li><a href="Student4-page.html">Student #4</a></li>
+                  <li><a href="Student5-page.html">Student #5</a></li>
+				   <li><a href="Student6-page.html">Student #6</a></li>
+                </ul>
+              </li>
+          
+              <li class="dropdown"><a href="Gates-page.html"><span>GATES</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                 <li><a href="Not-Gate.html">Not-Gate</a></li>
+                  <li><a href="And-Gate.html">And-Gate</a></li>
+                  <li><a href="Or-Gate.html">Or Gate</a></li>
+                  <li><a href="Xor-Gate.html">Xor Gate</a></li>
+				   <li><a href="Flip-Flop.html">Flip Flop</a></li>
+                </ul>
+              </li>
+              <li><a href="#Project">OTHERS</a></li>
+            </ul>
+          </li>
+		  
+		  <li><a class="nav-link scrollto" href="#Documentation">Documentation</a></li>
+          <li><a class="nav-link scrollto" href="#team">Dev Team</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+	  <!-- .navbar -->
+
+      <a href="Final.html" class="get-started-btn scrollto">Back</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Calculator</h2>
+          <ol>
+            <li><a href="Final.html">Back</a></li>
+            <li>#Project</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+	<!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+        
+		<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+     
+      
+	  <div class="fakeimg">
+      <div class="container p-5">
+    <form class="needs-validation row text-center" novalidate onsubmit="return false">
+      <h3>Enter two inputs</h3>
+      <div class="col">
+        <input type="text" class="form-control" id="input1" placeholder="Enter input 1">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please provide an input
+        </div>
+      </div>
+      <div class="col mb-5">
+        <input type="text" class="form-control" id="input2" placeholder="Enter input 2">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please provide an input
+        </div>
+      </div>
+	  </div>
+	  
+	  </div>
+	  <div class="card">
+	  <center>
+	   <br><input type="submit" class="btn btn-primary mb-5" style="color: black; text-align: center; font-family:Lucida Console; 
+	  font-size:20px;" id="submit" value="Calculate" onclick="calculate()"></br>
+        
+       
+         <b><input type="text" id="output" placeholder="OUTPUT VALUE" readonly></b>
+		 </center>
+	 </div>
+    </div>
+   
+	  
+      <div class="card">
+	  <h3 style=" color: black;">Which Operation would you like to perfrom?</h3>
+  
+    <div class="fakeimg">
+      <div  class="btn-group mb-5" role="group" aria-label="Basic radio toggle button group">
+
+        <input type="radio" class="btn-check" name="operation" id="sum" autocomplete="off" value="sum">
+        <label class="btn btn-outline-primary" style="color: black; text-align: center; font-family:Lucida Console; font-size:20px;" for="sum">Sum</label>
+
+        <input type="radio" class="btn-check" name="operation" id="difference" autocomplete="off" value="difference"
+          checked>
+        <label class="btn btn-outline-primary" style="color: black; text-align: center; font-family:Lucida Console; font-size:20px;" for="difference">Difference</label>
+
+        <input type="radio" class="btn-check" name="operation" id="product" autocomplete="off" value="product">
+        <label class="btn btn-outline-primary" style="color: black; text-align: center; font-family:Lucida Console; font-size:20px;" for="product">Product</label>
+
+        <input type="radio" class="btn-check" name="operation" id="division" autocomplete="off" value="division">
+        <label class="btn btn-outline-primary" style="color: black; text-align: center; font-family:Lucida Console; font-size:20px;" for="division">Division</label>
+
+        <input type="radio" class="btn-check" name="operation" id="average" autocomplete="off" value="avg">
+        <label class="btn btn-outline-primary" style="color: black; text-align: center; font-family:Lucida Console; font-size:20px;" for="average">Average</label>
+
+        <input type="radio" class="btn-check" name="operation" id="minimum" autocomplete="off" value="minimum">
+        <label class="btn btn-outline-primary" style="color: black; text-align: center; font-family:Lucida Console; font-size:20px;" for="minimum">Minimum</label>
+
+        <input type="radio" class="btn-check" name="operation" id="maximum" autocomplete="off" value="maximum">
+        <label class=" btn btn-outline-primary" style="color: black; text-align: center; font-family:Lucida Console; font-size:20px;" for="maximum">Maximum</label>
+
+      </div>
+	  </div>
+	  
+	  
+		
+	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+<script>
+let output = document.getElementById('output');
+function sum(input1, input2) {
+  let finalsum = input1 + input2;
+  output.value = finalsum;
+}
+function dif(input1, input2) {
+  let finaldif = input1 - input2;
+  output.value = finaldif;
+}
+function product(input1, input2) {
+  let finalproduct = input1 * input2;
+  output.value = finalproduct;
+}
+function div(input1, input2) {
+  let finaldiv = input1 / input2;
+  output.value = finaldiv;
+}
+function avg(input1, input2) {
+  let finalavg =(input1 + input2)/2;
+  output.value = finalavg;
+}
+function minormax(input1, input2, input3){
+  if(input3 == "max"){
+    if(input1 >input2){
+      output.value = input1;
+    }else{
+      output.value = input2;
+    }
+  }else{
+    if(input1<input2){
+      output.value = input1;
+    }else{
+      output.value = input2;
+    }
+  }
+}
+
+function calculate(){
+  var radios = document.getElementsByTagName('input');
+  let input1 = parseInt(document.getElementById('input1').value, 10);
+  let input2 = parseInt(document.getElementById('input2').value, 10);
+  for (var i = 0; i < radios.length; i++) {
+      if (radios[i].type === 'radio' && radios[i].checked) {
+        if(radios[i].value == "sum"){
+          sum(input1, input2)
+        }else if(radios[i].value == "difference"){
+          dif(input1, input2);
+        }else if(radios[i].value == "product"){
+          product(input1, input2);
+        }else if(radios[i].value == "division"){
+          div(input1, input2);
+        }else if(radios[i].value == "avg"){
+          avg(input1, input2);
+        }else if(radios[i].value == "minimum"){
+          minormax(input1, input2, "min");
+        }else if(radios[i].value == "maximum"){
+          minormax(input1, input2, "max");
+        }      
+      }
+  }
+}
+
+</script>
+ <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+       <center>
+             <div class="logo"><h1><span>G</span>roup <span>5</span></h1></div>
+        <p>Group 5's : Fundamentals of Computing Web Page, Copyright &copy; <script>document.write(new Date().getFullYear());</script></p>
+      </div>
+      
+              <div class="social-links mt-3">
+               
+				</center>
+              </div>
+            </div>
+          
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+<style>
+/* Fake image */
+.fakeimg {
+  background-color: #C8CC46;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+#myImage,
+.button-group {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#backing,
+.2fakeimg {
+  background-color: #758bfd;
+  width: 90%;
+  padding: 10px;
+}
+</style>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+<!--Javascript-->
+              
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scrollY > 0);
+            })
+        </script>
+
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function()
+        {
+            document.getElementById('radio' + counter).checked = true;
+            counter ++;
+            if(counter > 6){
+                counter = 1;
+            }
+        }, 5000);
+        </script>
+</body>
+
+</html>
